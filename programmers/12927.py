@@ -20,11 +20,6 @@ def solution(n, works):
     # print(works)
     return sum([work**2 for work in works])
 
-
-
-
-
-
 cases = [[[4, 3, 3], 4, 12], [[2, 1, 2], 1, 6], [[1,1], 3, 0]]
 for case in cases:
     solution(case[1], case[0])
