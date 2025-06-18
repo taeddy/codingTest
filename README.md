@@ -1,6 +1,10 @@
 ## 코딩 알고리즘 문제 풀이 모음
 
-#### 현재까지 풀어본 총 문제 수 : 0개
+#### 현재까지 풀어본 총 문제 수 : 33개
+- solved_ac - 27개
+- programmers - 5개
+- codeforces - 1개
+
 
 #### 아래의 페이지에서 제공하는 문제들로 구성되어 있습니다.
 [BaekJoon(Solved.ac)](https://solved.ac/en/profile/stz3148)
