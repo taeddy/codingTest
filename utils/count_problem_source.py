@@ -34,15 +34,17 @@ def make_read_me(count_info):
 {count_info}
 
 #### 아래의 페이지에서 제공하는 문제들로 구성되어 있습니다.
-    [BaekJoon(Solved.ac)](https://solved.ac/en/profile/stz3148)
-    [Programmers](https://programmers.co.kr/)
-    [Codeforces](https://codeforces.com/profile/Taeddy)
-    [Atcoder](https://atcoder.jp/)
-    [Samsung_SW_Academy](https://swexpertacademy.com/main/main.do)
-    [LeetCode](https://leetcode.com/)
-    [HackerRank](https://www.hackerrank.com/)
-    [Jungol](http://www.jungol.co.kr/)
-    [Codeup](https://codeup.kr/)"""
+[BaekJoon(Solved.ac)](https://solved.ac/en/profile/stz3148)
+[Programmers](https://programmers.co.kr/)
+[Codeforces](https://codeforces.com/profile/Taeddy)
+[Atcoder](https://atcoder.jp/)
+<!--
+[Samsung_SW_Academy](https://swexpertacademy.com/main/main.do)
+[LeetCode](https://leetcode.com/)
+[HackerRank](https://www.hackerrank.com/)
+[Jungol](http://www.jungol.co.kr/)
+[Codeup](https://codeup.kr/)
+-->"""
 
 
 def update_readme_md():
