@@ -30,7 +30,9 @@ def make_count_info(total_code_num: int, code_cnt_info: dict):
 
 def make_read_me(count_info):
     return f"""## 코딩 알고리즘 문제 풀이 모음
-- Baekjoon(Solved.ac) <img src="https://static.solved.ac/class/c4s.svg" width="45px">
+|플랫폼|등급|
+|----|----|
+|Baekjoon(Solved.ac)|<img src="https://static.solved.ac/class/c4s.svg" width="45px">|
     
 {count_info}
 #### 아래의 페이지에서 제공하는 문제들로 구성되어 있습니다.

@@ -1,5 +1,7 @@
 ## 코딩 알고리즘 문제 풀이 모음
-- Baekjoon(Solved.ac) <img src="https://static.solved.ac/class/c4s.svg" width="45px">
+|플랫폼|등급|
+|----|----|
+|Baekjoon(Solved.ac)|<img src="https://static.solved.ac/class/c4s.svg" width="45px">|
     
 #### 현재까지 풀어본 총 문제 수 : 54개
 - solved_ac - 46개
