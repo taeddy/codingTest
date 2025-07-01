@@ -3,8 +3,8 @@
 |----|----|
 |Baekjoon(Solved.ac)|<img src="https://static.solved.ac/class/c4s.svg" width="45px">|
     
-#### 현재까지 풀어본 총 문제 수 : 57개
-- solved_ac - 48개
+#### 현재까지 풀어본 총 문제 수 : 58개
+- solved_ac - 49개
 - programmers - 8개
 - codeforces - 1개
 
