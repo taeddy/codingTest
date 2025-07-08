@@ -1,6 +1,9 @@
 # 배찬우는 배열을 좋아해
 # https://www.acmicpc.net/problem/25966
 
+# 풀이 포인트
+# input대신 stdin.readline 사용하기
+
 from sys import stdin
 input = stdin.readline
 
