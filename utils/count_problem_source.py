@@ -25,7 +25,7 @@ def make_count_info(code_cnt_info: dict):
 """
 
     for lang in langs:
-        count_info = f"#### 현재까지 해결한 {lang.upper()}문제"
+        count_info = f"#### 현재까지 해결한 {lang.upper()}문제\n"
         for dir_name, cnt_info in code_cnt_info.items():
             temp = f"- {dir_name}: {cnt_info[lang]}개\n"
             count_info += temp
