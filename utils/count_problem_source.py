@@ -28,6 +28,8 @@ def make_count_info(code_cnt_info: dict):
         count_info = f"#### 현재까지 해결한 {lang.upper()}문제\n"
         for dir_name, cnt_info in code_cnt_info.items():
             temp = f"- {dir_name}: {cnt_info[lang]}개\n"
+            if cnt_info[lang] == 0:
+                continue
             count_info += temp
         res += count_info
 
