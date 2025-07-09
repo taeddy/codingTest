@@ -1,28 +1,30 @@
-from collections import Counter
-from datetime import datetime
 import os
-import re
 
-DIRECTORY_LIST = ['solved_ac', 'programmers', 'codeforces']
+DIRECTORY_LIST = ["solved_ac", "programmers", "codeforces"]
 
 
 def count_problem_source_code():
-    total_code_num = 0
     code_cnt_info = {}
 
     for directory in DIRECTORY_LIST:
+        total_code_num = {"python": 0, "sql": 0}
         code_list = os.listdir(f"./{directory}")
-        total_code_num += len(code_list)
-        code_cnt_info[directory] = len(code_list)
+        for file in code_list:
+            if ".py" in file:
+                total_code_num["python"] += 1
+            elif ".sql" in file:
+                total_code_num["sql"] += 1
+        code_cnt_info[directory] = total_code_num
 
-    return total_code_num, code_cnt_info
+    return code_cnt_info
 
 
-def make_count_info(total_code_num: int, code_cnt_info: dict):
-    count_info = f"#### 현재까지 풀어본 총 문제 수 : {total_code_num}개\n"
+def make_count_info(code_cnt_info: dict):
+    lang = ['python', 'sql']
+    count_info = f"#### 현재까지 해결한 문제 수 : {sum(code_cnt_info.values())}개\n"
 
-    for name, cnt in code_cnt_info.items():
-        temp = f"- {name} - {cnt}개\n"
+    for dir_name, cnt_info in code_cnt_info.items():
+        temp = f"- {dir_name}: {cnt_info}개\n"
         count_info += temp
 
     return count_info
@@ -30,9 +32,11 @@ def make_count_info(total_code_num: int, code_cnt_info: dict):
 
 def make_read_me(count_info):
     return f"""## 코딩 알고리즘 문제 풀이 모음
+<!--
 |플랫폼|등급|
 |----|----|
 |Baekjoon(Solved.ac)|<img src="https://static.solved.ac/class/c4s.svg" width="45px">|
+-->
     
 {count_info}
 
@@ -40,8 +44,9 @@ def make_read_me(count_info):
 - [BaekJoon(Solved.ac)](https://solved.ac/en/profile/stz3148)
 - [Programmers](https://programmers.co.kr/)
 - [Codeforces](https://codeforces.com/profile/Taeddy)
-- [Atcoder](https://atcoder.jp/)
+
 <!--
+[Atcoder](https://atcoder.jp/)
 [Samsung_SW_Academy](https://swexpertacademy.com/main/main.do)
 [LeetCode](https://leetcode.com/)
 [HackerRank](https://www.hackerrank.com/)
@@ -51,9 +56,9 @@ def make_read_me(count_info):
 
 
 def update_readme_md():
-    total_code_num, code_cnt_info = count_problem_source_code()
+    code_cnt_info = count_problem_source_code()
 
-    count_info = make_count_info(total_code_num=total_code_num, code_cnt_info=code_cnt_info)
+    count_info = make_count_info(code_cnt_info=code_cnt_info)
 
     readme = make_read_me(count_info=count_info)
 
@@ -62,5 +67,5 @@ def update_readme_md():
 
 if __name__ == "__main__":
     readme = update_readme_md()
-    with open("./README.md", 'w', encoding='utf-8') as f:
+    with open("./README.md", "w", encoding="utf-8") as f:
         f.write(readme)
