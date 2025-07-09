@@ -3,9 +3,9 @@
 |----|----|
 |Baekjoon(Solved.ac)|<img src="https://static.solved.ac/class/c4s.svg" width="45px">|
     
-#### 현재까지 풀어본 총 문제 수 : 66개
-- solved_ac - 57개
-- programmers - 8개
+#### 현재까지 풀어본 총 문제 수 : 86개
+- solved_ac - 58개
+- programmers - 27개
 - codeforces - 1개
 
 
