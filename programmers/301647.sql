@@ -1,0 +1,7 @@
+-- 부모의 형질을 모두 가지는 대장균 찾기
+-- https://school.programmers.co.kr/learn/courses/30/lessons/301647
+
+SELECT B.ID, B.GENOTYPE, A.GENOTYPE AS PARENT_GENOTYPE
+FROM ECOLI_DATA AS A LEFT JOIN ECOLI_DATA AS B
+ON A.ID = B.PARENT_ID
+WHERE A.GENOTYPE & B.GENOTYPE = A.GENOTYPE
