@@ -20,14 +20,18 @@ def count_problem_source_code():
 
 
 def make_count_info(code_cnt_info: dict):
-    lang = ['python', 'sql']
-    count_info = f"#### 현재까지 해결한 문제 수 : {sum(code_cnt_info.values())}개\n"
+    langs = ['python', 'sql']
+    res = """
+"""
 
-    for dir_name, cnt_info in code_cnt_info.items():
-        temp = f"- {dir_name}: {cnt_info}개\n"
-        count_info += temp
+    for lang in langs:
+        count_info = f"#### 현재까지 해결한 {lang.upper()}문제"
+        for dir_name, cnt_info in code_cnt_info.items():
+            temp = f"- {dir_name}: {cnt_info[lang]}개\n"
+            count_info += temp
+        res += count_info
 
-    return count_info
+    return res
 
 
 def make_read_me(count_info):
