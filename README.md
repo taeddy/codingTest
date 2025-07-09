@@ -6,10 +6,12 @@
 -->
     
 
-#### 현재까지 해결한 PYTHON문제- solved_ac: 58개
+#### 현재까지 해결한 PYTHON문제
+- solved_ac: 58개
 - programmers: 8개
 - codeforces: 1개
-#### 현재까지 해결한 SQL문제- solved_ac: 0개
+#### 현재까지 해결한 SQL문제
+- solved_ac: 0개
 - programmers: 19개
 - codeforces: 0개
 
