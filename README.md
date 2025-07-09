@@ -1,4 +1,4 @@
-## 코딩 알고리즘 문제 풀이 모음
+## 📁 코딩 알고리즘 문제 풀이 모음
 <!--
 |플랫폼|등급|
 |----|----|
@@ -14,7 +14,9 @@
 - programmers: 19개
 
 
-#### 아래의 페이지에서 제공하는 문제들로 구성되어 있습니다.
+
+---
+#### 🗒️ 아래의 페이지에서 제공하는 문제들로 구성되어 있습니다.
 - [BaekJoon(Solved.ac)](https://solved.ac/en/profile/stz3148)
 - [Programmers](https://programmers.co.kr/)
 - [Codeforces](https://codeforces.com/profile/Taeddy)
