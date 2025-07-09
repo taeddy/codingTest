@@ -11,9 +11,7 @@
 - programmers: 8개
 - codeforces: 1개
 #### 현재까지 해결한 SQL문제
-- solved_ac: 0개
 - programmers: 19개
-- codeforces: 0개
 
 
 #### 아래의 페이지에서 제공하는 문제들로 구성되어 있습니다.
