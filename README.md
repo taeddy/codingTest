@@ -11,7 +11,7 @@
 - programmers: 8개
 - codeforces: 1개
 #### ➡️ 현재까지 해결한 SQL문제
-- programmers: 22개
+- programmers: 23개
 
 
 
