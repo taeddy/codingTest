@@ -1,0 +1,10 @@
+-- 분기별 분화된 대장균의 개체 수 구하기
+-- https://school.programmers.co.kr/learn/courses/30/lessons/299308
+
+SELECT A.QUARTER, COUNT(*) AS ECOLI_COUNT
+FROM (
+SELECT CONCAT(CEIL(MONTH(A.DIFFERENTIATION_DATE) / 3), 'Q') AS QUARTER
+FROM ECOLI_DATA AS A
+) AS A
+GROUP BY A.QUARTER
+ORDER BY A.QUARTER
