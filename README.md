@@ -7,7 +7,7 @@
     
 
 #### ➡️ 현재까지 해결한 PYTHON문제
-- solved_ac: 61개
+- solved_ac: 62개
 - programmers: 8개
 - codeforces: 1개
 #### ➡️ 현재까지 해결한 SQL문제
