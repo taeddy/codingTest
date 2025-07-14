@@ -6,7 +6,7 @@
 -->
     
 
-#### ➡️ 현재까지 해결한 PYTHON문제
+#### ➡️ 현재까지 해결한 Python문제
 - solved_ac: 63개
 - programmers: 8개
 - codeforces: 1개
