@@ -1,0 +1,12 @@
+-- 업그레이드 된 아이템 구하기
+-- https://school.programmers.co.kr/learn/courses/30/lessons/273711
+
+SELECT B.ITEM_ID, B.ITEM_NAME, B.RARITY
+FROM (
+    SELECT IT.ITEM_ID
+    FROM ITEM_INFO II JOIN ITEM_TREE IT
+    ON II.ITEM_ID = IT.PARENT_ITEM_ID
+    WHERE II.RARITY = 'RARE'
+    ) A JOIN ITEM_INFO B
+ON A.ITEM_ID = B.ITEM_ID
+ORDER BY B.ITEM_ID DESC
